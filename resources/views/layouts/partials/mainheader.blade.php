@@ -4,9 +4,9 @@
     <!-- Logo -->
     <a href="{{ url('/home') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>A</b>LT</span>
+        <span class="logo-mini"><b>A</b>PP</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Admin</b>LTE Laravel </span>
+        <span class="logo-lg"><b>APLIKASI</b>POLDA </span>
     </a>
 
     <!-- Header Navbar -->
@@ -16,7 +16,7 @@
             <span class="sr-only">{{ trans('adminlte_lang::message.togglenav') }}</span>
         </a>
         <!-- Navbar Right Menu -->
-        <div class="navbar-custom-menu">
+{{--         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <!-- Messages: style can be found in dropdown.less-->
                 <li class="dropdown messages-menu">
@@ -160,6 +160,6 @@
                     <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
                 </li>
             </ul>
-        </div>
+        </div> --}}
     </nav>
 </header>

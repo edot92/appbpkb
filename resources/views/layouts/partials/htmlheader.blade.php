@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title> AdminLTE 2 with Laravel - @yield('htmlheader_title', 'Your title here') </title>
+    <title>Aplikasi @yield('htmlheader_title', 'Your title here') </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
 
@@ -16,9 +16,53 @@
           page. However, you can choose any other skin. Make sure you
           apply the skin class to the body tag so the changes take effect.
     -->
-    <link href="{{ asset('/css/skins/skin-blue.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('/css/skins/skin-green.css') }}" rel="stylesheet" type="text/css" />
     <!-- iCheck -->
-    <link href="{{ asset('/plugins/iCheck/square/blue.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('/plugins/iCheck/square/red.css') }}" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+/*navigasi*/
+.nav {
+    background-color: white !important;
+
+}
+
+.nav>li>a {
+    background-color: #00a65a;
+    color: black;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    border-bottom-color:#ddd;
+    outline:0;
+        font-weight:bolder;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+   color:white;
+      border-color:black;
+}
+
+.nav-tabs > li.rounded.active > a,
+.nav-tabs > li.rounded.active > a:hover,
+.nav-tabs > li.rounded.active > a:focus
+ {
+    background-color:gray;
+    font-weight:bolder;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+   color:black;
+   border-color:black;
+}
+.nav-tabs > li.rounded > a
+ {
+    background-color:#00a65a;
+    font-weight:bolder;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+   color:white;
+      border-color:black;
+}
+</style>
+
 <style media="screen">
 html,
 body {
@@ -120,7 +164,7 @@ padding: 5px;
 margin: 15px;
 width: 150px;
 height: 150px;
-background: lightblue;
+background: red;
 color: green;
 overflow: hidden;
 /* center ad text */

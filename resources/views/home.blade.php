@@ -12,7 +12,7 @@
   {{-- <div class="panel with-nav-tabs panel-primary"> --}}
 
   <div class="container-fluid with-nav-tabs panel-primary" style="background-color:white;">
-      <ul class="nav nav-tabs marginBottom" id="idTabKendaraanBaru" >  </ul>
+      <ul class="nav nav-tabs marginBottom rounded" id="idTabKendaraanBaru" >  </ul>
 {{--
         <div class="row-fluid "> --}}
             <div class="tab-content span4">
@@ -57,7 +57,7 @@ $(function () {
               ul.onclick = function(event) {
                 event.preventDefault();
                   var target = getEventTarget(event);
-                  alert(target.href);
+               //   alert(target.href);
                   registerComposeButtonEvent(target);
                   registerCloseEvent();
               };
@@ -71,10 +71,10 @@ function registerComposeButtonEvent(target) {
 var Tempid= target.innerHTML;
 Tempid=Tempid.replace(/ /g,"_"); // ganti spasi menjadi underscore
         var tabId =Tempid;
-        alert(Tempid);
+      //  alert(Tempid);
 
-        $('.nav-tabs').append('<li><a href="#' + tabId + '"><button class="close closeTab" type="button" >×</button>'+target.innerHTML+'</a></li>');
-        $('.tab-content').append('<div class="tab-pane" id="' + tabId + '"></div>');
+        $('.nav-tabs').append('<li class="rounded" ><a href="#' + tabId + '"><button class="close closeTab" type="button" >×</button>'+target.innerHTML+'</a></li>');
+        $('.tab-content').append('<div class="tab-pane " id="' + tabId + '"></div>');
 
         craeteNewTabAndLoadUrl("", target.href, "#" + tabId);
 

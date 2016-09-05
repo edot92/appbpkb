@@ -15,7 +15,7 @@
 
 // Route::get('/home', 'HomeController@index');
 Route::get('/', function () {
-    return view('kendaraanbaru');
+    return view('home');
 });
 
 Route::get('/pendaftaranbbn1', function () {
