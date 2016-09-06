@@ -52,6 +52,18 @@
 
 
       <style type="text/css">
+
+ /*     // Class*/
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*// Usage as a mixin*/
+.element {
+  .center-block();
+}
         /*navigasi*/
         .nav {
             background-color: white !important;
@@ -76,7 +88,7 @@
         .nav-tabs > li.rounded.active > a:hover,
         .nav-tabs > li.rounded.active > a:focus
         {
-            background-color:gray;
+            background-color:white;
             font-weight:bolder;
             border-top-left-radius:10px;
             border-top-right-radius:10px;
@@ -213,6 +225,11 @@
         @media(max-width: 900px) {
             .page-ads { display: none; }
         }
+        .my-column {
+    background-color: green;
+    padding-right:0;
+    padding-left:0;
+}
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

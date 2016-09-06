@@ -17,9 +17,7 @@ Home
   <div class="row-fluid "> --}}
     <div class="tab-content span4">
       {{-- isi konten di sini --}}
-      <div id="table">
-        Loading...
-      </div>
+
     </div>
     {{-- </div> --}}
   </div>
@@ -178,7 +176,8 @@ function tesss(){
             // Create jqxGrid
             $("#jqxgrid").jqxGrid(
             {
-              width: 850,
+              width: '80%',
+                height: '80%',
               source: dataAdapter,
               groupable: true,
               columns: [

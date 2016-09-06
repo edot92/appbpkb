@@ -14,8 +14,6 @@ $uri = strtoupper($uri);
   <div class="col-md-12 col-xs-12">
     <form class="form-horizontal form-label-left">
       <div class="row">
-
-
         <div class="form-group">
           <label class="control-label col-md-3 col-sm-3 col-xs-12">Tanggal</label>
           <div class="col-md-9 col-sm-9 col-xs-12">
@@ -104,65 +102,29 @@ $uri = strtoupper($uri);
             </div>
           </div>
         </div>
-      </div>
+
+        <div class="divider-dashed"></div>
+</div>
 
 
-      <div class="divider-dashed"></div>
+{{-- end panel ke 1 --}}
+{{-- panel 2 --}}
 
-    </div>
-
-  </div>
-
-
+<br>
+<div class="row">
 
 
-
-
-
-  {{-- panel 2 --}}
-  {{-- end panel ke 1 --}}
-
-  {{-- panel ke 2 --}}
-  <br>
   <button type="button"  id ="hww" onclick="tesss()" class="btn btn-info col-md-12" data-toggle="collapse" data-target="#idCollapsePendaftaranBBN1_2">Table</button>
   <br>
   <br>
   <div id="idCollapsePendaftaranBBN1_2" class="collapse in">
 
-tes
+   <div id='jqxWidget' style="font-size: 13px; font-family: Verdana; float: center;">
+    <div id="jqxgrid">
+    </div>
 
   </div>
+</div>
+</div>
 
-
-         <div id='jqxWidget' style="font-size: 13px; font-family: Verdana; float: left;">
-        <div id="jqxgrid">
-        </div>
-        <div style="margin-top: 30px;">
-            <div style="float: left; margin-left: 20px;">
-                <input value="Expand Group" type="button" id='expand' />
-                <br />
-                <input style="margin-top: 10px;" value="Collapse Group" type="button" id='collapse' />
-                <br />
-                <span style="margin-top: 10px;">Group:</span>
-                <input value="1" id="groupnum" style="margin-top: 10px; width: 20px;" type="text" />
-            </div>
-            <div style="float: left; margin-left: 20px;">
-                <input value="Expand All Groups" type="button" id='expandall' />
-                <br />
-                <input style="margin-top: 10px; margin-bottom: 10px;" value="Collapse All Groups"
-                    type="button" id='collapseall' />
-                <br />
-            </div>
-            <div style="float: left; margin-left: 20px;">
-                <div style="font-weight: bold;">
-                    <span>Event Log:</span>
-                </div>
-                <div style="margin-top: 10px;">
-                    <span>Expanded Group:</span> <span id="expandedgroup"></span>
-                </div>
-                <div style="margin-top: 10px;">
-                    <span>Collapsed Group:</span> <span id="collapsedgroup"></span>
-                </div>
-            </div>
-        </div>
-    </div>
+{{-- panel ke 2 --}}
